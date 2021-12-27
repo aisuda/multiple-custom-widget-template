@@ -1,0 +1,124 @@
+{
+  "name": "multiple-cutom-widget-template",
+  "version": "1.0.1",
+  "description": "amis自定义组件模板（多个自定义组件）",
+  "keywords": [
+    "自定义组件模板",
+    "amis自定义组件",
+    "amis-editor自定义插件"
+  ],
+  "author": "fex",
+  "license": "MIT",
+  "scripts": {
+    "dev": "akfun dev",
+    "build": "akfun build",
+    "build2lib": "akfun build2lib",
+    "format": "prettier --write \"src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}\""
+  },
+  "files": [
+    "editor/*"
+  ],
+  "framework": "react",
+  "amis-widgets": [
+    {
+      "name": "react-select",
+      "framework": "react",
+      "usage": "renderer",
+      "type": "react-select",
+      "entry": "/dist/reactSelect.umd",
+      "files": [],
+      "status": true,
+      "description": "自定义组件react-select",
+      "weight": 100,
+      "editorPlugin": {
+        "name": "react-select-plugin",
+        "framework": "react",
+        "type": "react-select",
+        "entry": "/dist/reactSelectPlugin.umd",
+        "status": true,
+        "tag": ["表单项"],
+        "sort": 100,
+        "description": "自定义组件react-select"
+      }
+    },
+    {
+      "name": "hello-jquery",
+      "framework": "jquery",
+      "usage": "renderer",
+      "type": "hello-jquery",
+      "entry": "/dist/helloJquery.umd",
+      "files": [],
+      "status": true,
+      "description": "自定义组件react-select",
+      "weight": 100,
+      "editorPlugin": {
+        "name": "hello-jquery-plugin",
+        "framework": "jquery",
+        "type": "hello-jquery",
+        "entry": "/dist/helloJqueryPlugin.umd",
+        "status": true,
+        "tag": ["表单项"],
+        "sort": 100,
+        "description": "自定义组件hello-jquery"
+      }
+    },
+    {
+      "name": "vue-text",
+      "framework": "jquery",
+      "usage": "renderer",
+      "type": "vue-text",
+      "entry": "/dist/vueText.umd",
+      "files": [],
+      "status": true,
+      "description": "自定义组件vue-text",
+      "weight": 100,
+      "editorPlugin": {
+        "name": "hello-jquery-plugin",
+        "framework": "vue",
+        "type": "vue-text",
+        "entry": "/dist/vueTextPlugin.umd",
+        "status": true,
+        "tag": ["表单项"],
+        "sort": 100,
+        "description": "自定义组件vue-text"
+      }
+    }
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git@github.com:aisuda/multiple-cutom-widget-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aisuda/multiple-cutom-widget-template/issues"
+  },
+  "dependencies": {
+    "amis-widget": "^1.0.2"
+  },
+  "devDependencies": {
+    "axios": "^0.24.0",
+    "jquery": "^3.5.1",
+    "react": "^16.8.6",
+    "vue": "^2.6.14",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^9.1.1",
+    "akfun": "^1.5.17",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.4.1"
+  }
+}
