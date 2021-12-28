@@ -61,21 +61,23 @@
       }
     },
     {
-      "name": "vue-text",
+      "name": "vue-info-card",
       "framework": "vue",
       "usage": "renderer",
-      "type": "vue-text",
-      "entry": "/dist/vueText.umd",
-      "files": [],
+      "type": "vue-info-card",
+      "entry": "/dist/infoCard.umd",
+      "files": [
+        "/dist/index.css"
+      ],
       "status": true,
       "description": "自定义组件vue-text",
       "weight": 100,
       "editorPlugin": {
-        "name": "hello-jquery-plugin",
-        "type": "vue-text",
-        "entry": "/dist/vueTextPlugin.umd",
+        "name": "vue-info-card-plugin",
+        "type": "vue-info-card",
+        "entry": "/dist/infoCardPlugin.umd",
         "status": true,
-        "tag": ["表单项"],
+        "tag": ["展示"],
         "sort": 100,
         "description": "自定义组件vue-text"
       }
@@ -100,7 +102,7 @@
     "url": "https://github.com/aisuda/multiple-cutom-widget-template/issues"
   },
   "dependencies": {
-    "amis-widget": "^1.0.2"
+    "amis-widget": "^1.0.5"
   },
   "devDependencies": {
     "axios": "^0.24.0",

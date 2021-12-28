@@ -16,7 +16,7 @@ module.exports = {
   webpack: {
     resolve: {
       // webpack的resolve配置
-      extensions: ['.js', '.jsx', '.ts', '.tsx', 'json'], // 用于配置webpack在尝试过程中用到的后缀列表
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue', 'json'], // 用于配置webpack在尝试过程中用到的后缀列表
       alias: {
         '@': resolve('src'),
         $function: resolve('src/function'),
@@ -33,8 +33,8 @@ module.exports = {
       index: [
         './src/react-select/react-select.jsx',
         './src/react-select/plugin/react-select-plugin.jsx',
-        './src/vue-text/vue-text.jsx',
-        './src/vue-text/plugin/vue-text-plugin.jsx',
+        './src/vue-widget/index.js',
+        './src/vue-widget/plugin/info-card-plugin.jsx',
         './src/hello-jquery/hello-jquery.jsx',
         './src/hello-jquery/plugin/hello-jquery-plugin.jsx',
         './editor/EditorDemo.jsx'
@@ -54,8 +54,8 @@ module.exports = {
       // 自定义组件入口文件
       reactSelect: './src/react-select/react-select.jsx',
       reactSelectPlugin: './src/react-select/plugin/react-select-plugin.jsx',
-      vueText: './src/vue-text/vue-text.jsx',
-      vueTextPlugin: './src/vue-text/plugin/vue-text-plugin.jsx',
+      infoCard: './src/vue-widget/index.js',
+      infoCardPlugin: './src/vue-widget/plugin/info-card-plugin.jsx',
       helloJquery: './src/hello-jquery/hello-jquery.jsx',
       helloJqueryPlugin: './src/hello-jquery/plugin/hello-jquery-plugin.jsx'
     },
@@ -74,8 +74,8 @@ module.exports = {
       // 自定义组件入口文件
       reactSelect: './src/react-select/react-select.jsx',
       reactSelectPlugin: './src/react-select/plugin/react-select-plugin.jsx',
-      vueText: './src/vue-text/vue-text.jsx',
-      vueTextPlugin: './src/vue-text/plugin/vue-text-plugin.jsx',
+      infoCard: './src/vue-widget/index.js',
+      infoCardPlugin: './src/vue-widget/plugin/info-card-plugin.jsx',
       helloJquery: './src/hello-jquery/hello-jquery.jsx',
       helloJqueryPlugin: './src/hello-jquery/plugin/hello-jquery-plugin.jsx'
     },
