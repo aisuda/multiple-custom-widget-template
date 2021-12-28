@@ -31,8 +31,8 @@ module.exports = {
   dev: {
     entry: { // 调试入口（本地编辑器中预览自定义组件入口）
       index: [
-        './src/react-select/react-select.jsx',
-        './src/react-select/plugin/react-select-plugin.jsx',
+        './src/react-widget/index.js',
+        './src/react-widget/plugin/info-card-plugin.jsx',
         './src/vue-widget/index.js',
         './src/vue-widget/plugin/info-card-plugin.jsx',
         './src/hello-jquery/hello-jquery.jsx',
@@ -49,31 +49,11 @@ module.exports = {
     hostname: 'localhost',
     cssSourceMap: false,
   },
-  build: {
-    entry: {
-      // 自定义组件入口文件
-      reactSelect: './src/react-select/react-select.jsx',
-      reactSelectPlugin: './src/react-select/plugin/react-select-plugin.jsx',
-      infoCard: './src/vue-widget/index.js',
-      infoCardPlugin: './src/vue-widget/plugin/info-card-plugin.jsx',
-      helloJquery: './src/hello-jquery/hello-jquery.jsx',
-      helloJqueryPlugin: './src/hello-jquery/plugin/hello-jquery-plugin.jsx'
-    },
-    // 用于构建生产环境代码的相关配置信息
-    NODE_ENV: 'production',
-    assetsRoot: resolve('./dist'), // 打包后的文件绝对路径（物理路径）
-    assetsPublicPath: './', // 设置静态资源的引用路径（根域名+路径）
-    assetsSubDirectory: '', // 资源引用二级路径
-    productionSourceMap: false,
-    productionGzip: false,
-    productionGzipExtensions: ['js', 'css', 'json'],
-    bundleAnalyzerReport: false,
-  },
   build2lib: {
     entry: {
       // 自定义组件入口文件
-      reactSelect: './src/react-select/react-select.jsx',
-      reactSelectPlugin: './src/react-select/plugin/react-select-plugin.jsx',
+      reactInfoCard: './src/react-widget/index.js',
+      reactInfoCardPlugin: './src/react-widget/plugin/info-card-plugin.jsx',
       infoCard: './src/vue-widget/index.js',
       infoCardPlugin: './src/vue-widget/plugin/info-card-plugin.jsx',
       helloJquery: './src/hello-jquery/hello-jquery.jsx',
