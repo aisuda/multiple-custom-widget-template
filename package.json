@@ -16,7 +16,7 @@
     "format": "prettier --write \"src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}\""
   },
   "files": [
-    "editor/*"
+    "dist/*"
   ],
   "framework": "react",
   "amis-widgets": [
@@ -32,7 +32,6 @@
       "weight": 100,
       "editorPlugin": {
         "name": "react-select-plugin",
-        "framework": "react",
         "type": "react-select",
         "entry": "/dist/reactSelectPlugin.umd",
         "status": true,
@@ -53,7 +52,6 @@
       "weight": 100,
       "editorPlugin": {
         "name": "hello-jquery-plugin",
-        "framework": "jquery",
         "type": "hello-jquery",
         "entry": "/dist/helloJqueryPlugin.umd",
         "status": true,
@@ -64,7 +62,7 @@
     },
     {
       "name": "vue-text",
-      "framework": "jquery",
+      "framework": "vue",
       "usage": "renderer",
       "type": "vue-text",
       "entry": "/dist/vueText.umd",
@@ -74,7 +72,6 @@
       "weight": 100,
       "editorPlugin": {
         "name": "hello-jquery-plugin",
-        "framework": "vue",
         "type": "vue-text",
         "entry": "/dist/vueTextPlugin.umd",
         "status": true,
