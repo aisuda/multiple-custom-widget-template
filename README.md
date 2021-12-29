@@ -1,4 +1,4 @@
-# multiple-cutom-widget-template
+# multiple-custom-widget-template
 > amis自定义组件模板（多个自定义组件）
 - 备注：主要用于充当amis-widget-cli中的多组件模板
 

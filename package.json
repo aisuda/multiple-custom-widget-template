@@ -1,5 +1,5 @@
 {
-  "name": "multiple-cutom-widget-template",
+  "name": "multiple-custom-widget-template",
   "version": "1.0.1",
   "description": "amis自定义组件模板（多个自定义组件）",
   "keywords": [
@@ -103,10 +103,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git@github.com:aisuda/multiple-cutom-widget-template.git"
+    "url": "https://git@github.com:aisuda/multiple-custom-widget-template.git"
   },
   "bugs": {
-    "url": "https://github.com/aisuda/multiple-cutom-widget-template/issues"
+    "url": "https://github.com/aisuda/multiple-custom-widget-template/issues"
   },
   "dependencies": {
     "amis-widget": "^1.0.5",
