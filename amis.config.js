@@ -24,9 +24,9 @@ module.exports = {
       },
     },
     // createDeclaration: true, // 打包时是否创建ts声明文件
-    ignoreNodeModules: true, // 打包时是否忽略 node_modules
+    ignoreNodeModules: false, // 打包时是否忽略 node_modules
     projectDir: ['src', 'editor'],
-    template: resolve('./editor/index.html'), // dev本地调试时需要html模板
+    // template: resolve('./editor/index.html'), // dev本地调试时需要html模板
   },
   dev: {
     entry: { // 调试入口（本地编辑器中预览自定义组件入口）
@@ -37,7 +37,6 @@ module.exports = {
         './src/vue-widget/plugin/info-card-plugin.jsx',
         './src/hello-jquery/hello-jquery.jsx',
         './src/hello-jquery/plugin/hello-jquery-plugin.jsx',
-        './editor/EditorDemo.jsx'
       ],
     },
     // 用于开启本地调试模式的相关配置信息
