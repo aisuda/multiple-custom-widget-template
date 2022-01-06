@@ -1,21 +1,27 @@
 /**
  * @file 编辑器扩展, 增加自定义组件
  */
-// @ts-ignore
 import { registerAmisEditorPlugin } from 'amis-widget';
 
 export class InfoCardPlugin {
   rendererName = 'react-info-card';
+
   $schema = '/schemas/UnkownSchema.json';
+
   name = 'react-info-card';
+
   description = '信息展示卡片';
+
   tags = ['展示', '自定义'];
+
   icon = 'fa fa-file-code-o';
+
   scaffold = {
     type: 'react-info-card',
     label: 'react-info-card',
     name: 'react-info-card',
   };
+
   previewSchema = {
     type: 'react-info-card',
     label: 'react-info-card',

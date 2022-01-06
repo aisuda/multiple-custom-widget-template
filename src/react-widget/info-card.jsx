@@ -6,6 +6,7 @@ export default class InfoCard extends React.PureComponent {
     super();
     this.agreeDataFormat = this.agreeDataFormat.bind(this);
   }
+
   agreeDataFormat(agreeData) {
     if (agreeData && agreeData <= 9999) {
       return agreeData;
@@ -14,6 +15,7 @@ export default class InfoCard extends React.PureComponent {
       return `${Math.floor(agreeData / 1000) / 10}w`;
     }
   }
+
   render() {
     const { title, backgroundImage, img_count, comment_count } = this.props;
     const curBackgroundImage =

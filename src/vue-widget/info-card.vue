@@ -62,7 +62,8 @@ export default {
     agreeDataFormat(agreeData) {
       if (agreeData && agreeData <= 9999) {
         return agreeData;
-      } else if (agreeData && agreeData > 9999) {
+      }
+      if (agreeData && agreeData > 9999) {
         return `${Math.floor(agreeData / 1000) / 10}w`;
       }
     },

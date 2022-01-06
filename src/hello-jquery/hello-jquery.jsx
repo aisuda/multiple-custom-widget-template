@@ -1,5 +1,4 @@
 import $ from 'jquery';
-// @ts-ignore
 import { registerRendererByType } from 'amis-widget';
 
 class MyJQueryBtn {
@@ -10,7 +9,7 @@ class MyJQueryBtn {
 
   onMount(props) {
     $('#btn').click(this.test.bind(this, props));
-  };
+  }
 
   test(props) {
     props.onAction(
@@ -19,13 +18,13 @@ class MyJQueryBtn {
         actionType: 'dialog',
         dialog: {
           title: '来个弹框',
-          body: 'Bom Bom Bom ${a} ${b}'
-        }
+          body: 'Bom Bom Bom ${a} ${b}',
+        },
       },
       {
         a: 1,
-        b: 2
-      }
+        b: 2,
+      },
     );
   }
 }
@@ -34,7 +33,7 @@ registerRendererByType(MyJQueryBtn, {
   type: 'hello-jquery',
   usage: 'renderer',
   weight: 98,
-  framework: 'jquery'
+  framework: 'jquery',
 });
 
 export default MyJQueryBtn;

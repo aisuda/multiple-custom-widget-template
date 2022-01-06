@@ -1,6 +1,5 @@
-import InfoCard from './info-card';
-// @ts-ignore
 import { registerRendererByType } from 'amis-widget';
+import InfoCard from './info-card';
 
 registerRendererByType(InfoCard, {
   type: 'react-info-card',
