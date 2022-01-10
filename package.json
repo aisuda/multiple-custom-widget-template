@@ -28,14 +28,12 @@
       "files": [
         "/dist/reactInfoCard.css"
       ],
-      "status": true,
       "description": "信息展示卡片",
       "weight": 100,
       "editorPlugin": {
         "name": "react-info-card-plugin",
         "type": "react-info-card",
         "entry": "/dist/reactInfoCardPlugin.umd",
-        "status": true,
         "tag": [
           "展示"
         ],
@@ -50,14 +48,12 @@
       "type": "hello-jquery",
       "entry": "/dist/helloJquery.umd",
       "files": [],
-      "status": true,
       "description": "自定义组件react-select",
       "weight": 100,
       "editorPlugin": {
         "name": "hello-jquery-plugin",
         "type": "hello-jquery",
         "entry": "/dist/helloJqueryPlugin.umd",
-        "status": true,
         "tag": [
           "表单项"
         ],
@@ -74,14 +70,12 @@
       "files": [
         "/dist/infoCard.css"
       ],
-      "status": true,
       "description": "自定义组件vue-text",
       "weight": 100,
       "editorPlugin": {
         "name": "vue-info-card-plugin",
         "type": "vue-info-card",
         "entry": "/dist/infoCardPlugin.umd",
-        "status": true,
         "tag": [
           "展示"
         ],
