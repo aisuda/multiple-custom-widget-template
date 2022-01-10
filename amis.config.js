@@ -47,7 +47,7 @@ module.exports = {
     assetsSubDirectory: '',
     hostname: 'localhost',
     cssSourceMap: false,
-    closeHotReload: false, // 是否关闭热更新
+    closeHotReload: true, // 是否关闭热更新
   },
   build2lib: {
     entry: {
