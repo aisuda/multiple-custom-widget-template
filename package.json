@@ -1,6 +1,6 @@
 {
   "name": "multiple-custom-widget-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "amis自定义组件模板（多个自定义组件）",
   "keywords": [
     "自定义组件模板",
@@ -17,7 +17,7 @@
   "files": [
     "dist/*"
   ],
-  "framework": "react",
+  "framework": "mulStack",
   "amis-widgets": [
     {
       "name": "react-info-card",
