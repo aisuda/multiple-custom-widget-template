@@ -29,7 +29,7 @@ module.exports = {
     // template: resolve('./editor/index.html'), // dev本地调试时需要html模板
   },
   dev: {
-    entry: { // 调试入口（本地编辑器中预览自定义组件入口）
+    entry: { // 本地编辑器中预览自定义组件
       index: [
         './src/react-widget/index.js',
         './src/react-widget/plugin/info-card-plugin.jsx',
@@ -47,6 +47,56 @@ module.exports = {
     assetsSubDirectory: '',
     hostname: 'localhost',
     cssSourceMap: false,
+    closeHotReload: true, // 是否关闭热更新
+  },
+  preview: {
+    entry: { // 预览自定义组件内容
+      index: './src/preview.js',
+    },
+    // 用于开启本地调试模式的相关配置信息
+    NODE_ENV: 'development',
+    port: 80,
+    autoOpenBrowser: true,
+    assetsPublicPath: '/', // 设置静态资源的引用路径（根域名+路径）
+    assetsSubDirectory: '',
+    hostname: 'localhost',
+    proxyTable: {
+      '/apiTest': {
+        target: 'http://api-test.com.cn', // 不支持跨域的接口根地址
+        ws: true,
+        changeOrigin: true
+      }
+    },
+    cssSourceMap: true,
+    closeHotReload: false, // 是否关闭热更新
+  },
+  linkDebug: {
+    entry: { // 外链调试（amis-saas中预览自定义组件）
+      index: [
+        './src/react-widget/index.js',
+        './src/react-widget/plugin/info-card-plugin.jsx',
+        './src/vue-widget/index.js',
+        './src/vue-widget/plugin/info-card-plugin.jsx',
+        './src/hello-jquery/hello-jquery.jsx',
+        './src/hello-jquery/plugin/hello-jquery-plugin.jsx',
+      ],
+    },
+    // 用于开启本地调试模式的相关配置信息
+    NODE_ENV: 'production',
+    port: 80,
+    autoOpenBrowser: false,
+    closeHtmlWebpackPlugin: true, // 关闭HtmlWebpackPlugin
+    assetsPublicPath: '/', // 设置静态资源的引用路径（根域名+路径）
+    assetsSubDirectory: '',
+    hostname: 'localhost',
+    proxyTable: {
+      '/apiTest': {
+        target: 'http://api-test.com.cn', // 不支持跨域的接口根地址
+        ws: true,
+        changeOrigin: true
+      }
+    },
+    cssSourceMap: true,
     closeHotReload: true, // 是否关闭热更新
   },
   build2lib: {

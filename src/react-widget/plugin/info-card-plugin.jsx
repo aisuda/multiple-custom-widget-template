@@ -12,7 +12,7 @@ export class InfoCardPlugin {
 
   description = '信息展示卡片';
 
-  tags = ['展示', '自定义'];
+  tags = ['展示'];
 
   icon = 'fa fa-file-code-o';
 
