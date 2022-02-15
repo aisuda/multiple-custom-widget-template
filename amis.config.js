@@ -120,6 +120,6 @@ module.exports = {
     productionSourceMap: false,
     productionGzip: false,
     productionGzipExtensions: ['js', 'css', 'json'],
-    bundleAnalyzerReport: true,
+    bundleAnalyzerReport: false,
   }
 };
