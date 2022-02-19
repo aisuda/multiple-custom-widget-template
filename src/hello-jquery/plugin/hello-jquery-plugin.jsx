@@ -12,7 +12,7 @@ export class HelloJqueryPlugin {
 
   description = 'hello-jquery';
 
-  tags = ['按钮'];
+  tags = ['自定义'];
 
   icon = 'fa fa-file-code-o';
 
