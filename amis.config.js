@@ -37,8 +37,6 @@ module.exports = {
         './src/vue-widget/plugin/info-card-plugin.jsx',
         './src/hello-jquery/hello-jquery.jsx',
         './src/hello-jquery/plugin/hello-jquery-plugin.jsx',
-        './src/react-resource-purchase/index.js',
-        './src/react-resource-purchase/plugin/index.jsx',
       ],
     },
     // 用于开启本地调试模式的相关配置信息
