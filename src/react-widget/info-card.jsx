@@ -18,6 +18,7 @@ export default class InfoCard extends React.PureComponent {
 
   render() {
     const { title, backgroundImage, img_count, comment_count } = this.props;
+    console.log('this.props:', this.props);
     const curBackgroundImage =
       backgroundImage ||
       'https://search-operate.cdn.bcebos.com/64c279f23794a831f9a8e7a4e0b722dd.jpg';
