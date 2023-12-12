@@ -47,6 +47,12 @@ export class InfoCardPlugin {
         'https://search-operate.cdn.bcebos.com/64c279f23794a831f9a8e7a4e0b722dd.jpg',
     },
     {
+      type: 'input-url',
+      name: 'apiUrl',
+      label: '数据接口',
+      value: '',
+    },
+    {
       type: 'input-number',
       name: 'img_count',
       label: '图片数量',

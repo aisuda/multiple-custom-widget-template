@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { resolveVariableAndFilter } from 'amis-core';
+import { AisudaPage } from './aisudaPage';
 import './style.scss'; // 组件内容样式
 
 export default class InfoCard extends React.PureComponent {
@@ -30,6 +31,10 @@ export default class InfoCard extends React.PureComponent {
       console.log('optionsVal:', optionsVal);
     }
 
+    const pageUrl =
+      'https://amis-saas-sdk.bj.bcebos.com/files/01b18a917f1b-86e4206e/Qyw7pRaEgG-655496e8.js';
+    const data = { customData: 'this is custom data' };
+
     const curBackgroundImage =
       backgroundImage ||
       'https://search-operate.cdn.bcebos.com/64c279f23794a831f9a8e7a4e0b722dd.jpg';
@@ -54,6 +59,7 @@ export default class InfoCard extends React.PureComponent {
             </div>
           )}
         </div>
+        <AisudaPage pageUrl={pageUrl} data={data} />
       </div>
     );
   }
