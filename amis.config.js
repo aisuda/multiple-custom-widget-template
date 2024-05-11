@@ -26,6 +26,16 @@ module.exports = {
     // createDeclaration: true, // 打包时是否创建ts声明文件
     ignoreNodeModules: false, // 打包时是否忽略 node_modules
     projectDir: ['src', 'editor'],
+    postCssLoaderOption: {
+      postcssOptions: {
+        plugins: [
+          require('postcss-pxtorem')({
+            rootValue: 16, // 1rem 等于 16px
+            propList: ['*'], // 所有属性都转换
+          }),
+        ],
+      }
+    },
     // template: resolve('./editor/index.html'), // dev本地调试时需要html模板
   },
   dev: {
